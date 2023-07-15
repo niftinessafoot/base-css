@@ -9,8 +9,8 @@
   "license": "MIT",
   "scripts": {
     "prepack": "npm run clean && npm run build",
-    "prebuild": "npm run clean",
-    "build": "sass src:dist -s compressed",
+    "prebuild:prod": "npm run clean",
+    "build:prod": "sass src:dist -s compressed",
     "prewatch": "npm run clean",
     "watch": "sass src:dist -w",
     "clean": "rm -rf dist/*"
