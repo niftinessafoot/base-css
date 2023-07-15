@@ -8,7 +8,7 @@
   "author": "Matthew Smith <code@niftinessafoot.com> (http://www.niftinessafoot.com/)",
   "license": "MIT",
   "scripts": {
-    "prepack": "npm run clean && npm run build",
+    "prepack": "npm run build:prod",
     "prebuild:prod": "npm run clean",
     "build:prod": "sass src:dist -s compressed",
     "prewatch": "npm run clean",
