@@ -2,6 +2,14 @@
 
 what it says on the tin—just my default CSS reset/boilerplate.
 
+## usage
+
+import the base.css right at the base package level.
+
+```js
+import "@afoot/base-css";
+```
+
 ## license
 
 [MIT](./LICENSE) © [Matthew Smith](http://www.niftinessafoot.com)
