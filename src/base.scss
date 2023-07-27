@@ -17,3 +17,20 @@ body {
   font: 1rem/1.6 sans-serif;
   min-height: 100vh;
 }
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  &:link,
+  &:visited {
+    color: var(--color);
+    text-decoration: underline;
+  }
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}

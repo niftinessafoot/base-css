@@ -1,11 +1,20 @@
 {
   "name": "@afoot/base-css",
   "version": "0.1.4",
-  "description": "",
+  "description": "Base CSS styles and resets for @afoot projects.",
   "keywords": [
-    "css"
+    "css",
+    "sass",
+    "styles",
+    "reset"
   ],
   "author": "Matthew Smith <code@niftinessafoot.com> (http://www.niftinessafoot.com/)",
+  "homepage": "https://github.com/niftinessafoot/base-css/",
+  "bugs": "https://github.com/niftinessafoot/base-css/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niftinessafoot/base-css/"
+  },
   "license": "MIT",
   "scripts": {
     "prepack": "npm run build:prod",
