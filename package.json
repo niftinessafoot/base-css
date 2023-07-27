@@ -1,6 +1,6 @@
 {
   "name": "@afoot/base-css",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Base CSS styles and resets for @afoot projects.",
   "keywords": [
     "css",
