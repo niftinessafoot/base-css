@@ -1,27 +1,17 @@
 :root {
-  --bg-body: #262626;
-  --color: #fff;
-  --accent: #c00;
+  --dark: #1f2225;
+  --light: #fcf8f2;
+  --accent: #f3a200;
+
+  --bg-body: var(--dark);
+  --color: var(--light);
 
   color-scheme: dark light;
   -webkit-font-smoothing: antialiased;
   hanging-punctuation: first last;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-body: #fff;
-    --color: #262626;
-  }
-}
-
 @import "./reset.css";
-
-::selection {
-  background-color: var(--color);
-  color: var(--bg-body);
-  text-shadow: none;
-}
 
 html {
   background-color: var(--bg-body);
@@ -99,6 +89,24 @@ label:has(input:disabled) {
 /*/
   Misc Behaviors
 /*/
+
+::selection {
+  background-color: var(--color);
+  color: var(--bg-body);
+  text-shadow: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent: #d99100;
+    --bg-body: var(--light);
+    --color: var(--dark);
+  }
+
+  ::selection {
+    background-color: var(--accent);
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   :has(:target) {
