@@ -1,37 +1,108 @@
 :root {
   --bg-body: #262626;
-  --color: #fcfcfc;
+  --color: #fff;
+  --accent: #c00;
+
+  color-scheme: dark light;
+  -webkit-font-smoothing: antialiased;
+  hanging-punctuation: first last;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-body: #fff;
+    --color: #262626;
+  }
+}
+
+@import "./reset.css";
+
+::selection {
+  background-color: var(--color);
+  color: var(--bg-body);
+  text-shadow: none;
+}
+
+html {
+  background-color: var(--bg-body);
+  color: var(--color);
+  accent-color: var(--accent);
 }
 
 body {
-  background: var(--bg-body);
-@import "./reset.css";
-  color: var(--color);
+  background-color: inherit;
+  color: currentColor;
   font: 1rem/1.6 sans-serif;
-  min-height: 100vh;
 }
 
-ul,
-ol {
-  list-style: none;
+/*/
+  Block Elements
+/*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
 }
+
+p {
+  margin-bottom: 1lh;
+  text-wrap: pretty;
+}
+
+dl,
+ol,
+ul {
+  margin-bottom: 1lh;
+}
+
+/*/
+  Inline Elements
+/*/
 
 a {
+  color: var(--accent, currentColor);
+
   &:link,
   &:visited {
-    color: var(--color);
     text-decoration: underline;
   }
   &:hover,
   &:active {
     text-decoration: none;
+  }
+}
+
+/*/
+  Form Elements
+/*/
+
+button,
+input[type="checkbox"],
+input[type="radio"],
+label {
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
+
+label:has(input:disabled) {
+  cursor: revert;
+}
+
+/*/
+  Misc Behaviors
+/*/
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1lh;
   }
 }
