@@ -26,7 +26,10 @@
   },
   "type": "module",
   "main": "./dist/base.css",
-  "exports": "./dist/base.css",
+  "exports": {
+    ".": "./dist/base.css",
+    "./reset": "./dist/reset.css"
+  },
   "files": [
     "./dist"
   ],

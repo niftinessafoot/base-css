@@ -13,6 +13,7 @@
 
 body {
   background: var(--bg-body);
+@import "./reset.css";
   color: var(--color);
   font: 1rem/1.6 sans-serif;
   min-height: 100vh;
