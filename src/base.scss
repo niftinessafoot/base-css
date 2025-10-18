@@ -109,6 +109,10 @@ label:has(input:disabled) {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+
   :has(:target) {
     scroll-behavior: smooth;
     scroll-padding-top: 1lh;
