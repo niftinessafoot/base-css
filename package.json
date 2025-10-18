@@ -1,11 +1,11 @@
 {
   "name": "@afoot/base-css",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Base CSS styles and resets for @afoot projects.",
   "keywords": [
     "css",
     "sass",
-    "styles", 
+    "styles",
     "reset"
   ],
   "author": "Matthew Smith <code@niftinessafoot.com> (http://www.niftinessafoot.com/)",
